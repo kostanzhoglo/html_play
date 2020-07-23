@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+</head>
+<body>
+    <form action="results.html">
+        <div>
+            <label for="name_baby">Name</label>
+            <input 
+                type="text" 
+                name="name" 
+                id="name_baby" 
+                placeholder="Aristarch"
+                required />
+        </div>
+        <div>
+            <label for="password_baby">Password</label>
+            <input 
+                type="password" 
+                name="password" 
+                id="password_baby"
+                required />
+        </div>
+        <div>
+            <label for="email_baby">Email</label>
+            <input 
+                type="email"
+                name="email"
+                id="email_baby"
+                required />
+        </div>
+        <div>
+            <label for="age_baby">Age</label>
+            <input 
+                type="number"
+                name="age"
+                id="age_baby"
+                min="1"
+                max="150"
+                step="10" />
+        </div>
+        
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
+
+
+<!-- <input> can also take a value='Aristarch' that will be the default value of that input box-->
