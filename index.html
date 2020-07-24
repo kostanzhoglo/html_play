@@ -6,43 +6,129 @@
     <title>HTML Forms</title>
 </head>
 <body>
-    <form action="results.html">
+    <form action="results.html" method="GET" enctype="multipart/form-data">
         <div>
-            <label for="name_baby">Name</label>
+            <label for="nameBaby">Name</label>
             <input 
                 type="text" 
                 name="name" 
-                id="name_baby" 
+                id="nameBaby" 
                 placeholder="Aristarch"
                 required />
         </div>
         <div>
-            <label for="password_baby">Password</label>
+            <label for="passwordBaby">Password</label>
             <input 
                 type="password" 
                 name="password" 
-                id="password_baby"
+                id="passwordBaby"
                 required />
         </div>
         <div>
-            <label for="email_baby">Email</label>
+            <label for="emailBaby">Email</label>
             <input 
                 type="email"
                 name="email"
-                id="email_baby"
+                id="emailBaby"
                 required />
         </div>
         <div>
-            <label for="age_baby">Age</label>
+            <label for="ageBaby">Age</label>
             <input 
                 type="number"
                 name="age"
-                id="age_baby"
+                id="ageBaby"
                 min="1"
                 max="150"
                 step="10" />
         </div>
-        
+        <div>
+            <label for="dateBaby">Favorite Date</label>
+            <input 
+                type="date"
+                name="date"
+                id="dateBaby"
+                min="1980-04-23" />
+        </div>
+        <!-- Checkbox -->
+        <div>
+            Favorite Food
+            <div>
+                <label for="bananaBaby">Banana</label>
+                <input type="checkbox" name="banana" id="bananaBaby">
+            </div>
+            <div>
+                <label for="pizzaBaby">Pizza</label>
+                <input type="checkbox" name="pizza" id="pizzaBaby">
+            </div>
+        </div>
+        <!-- Radio Buttons -->
+        <div>
+            Gender
+            <div>
+                <label for="femaleBaby">Female</label>
+                <input 
+                    type="radio"
+                    name="gender"
+                    id="femaleBaby"
+                    value="female" />
+            </div>
+            <div>
+                <label for="maleBaby">Male</label>
+                <input 
+                    type="radio"
+                    name="gender"
+                    id="maleBaby"
+                    value="male" />
+            </div>
+        </div>
+        <!-- Select Dropdown -->
+        <div>
+            <label for="eyeColorBaby">Eye Color</label>
+            <select name="eyeColor" id="eyeColorBaby" multiple>
+                <option value="Green">Green</option>
+                <option value="Red">Red</option>
+            </select>
+        </div>
+        <!-- TextArea -->
+        <div>
+            <label for="bioBaby">Bio</label>
+            <textarea name="bio" id="bioBaby" cols="30" rows="10"></textarea>
+        </div>
+
+        <!-- Hidden Input: only ever used with fancy js or when sending some info from the server to the browser -->
+        <input type="hidden" name="hidden" value="yo hello">
+
+        <!-- File... needs a new attribute on <form> called enctype=" " -->
+        <div>
+            <label for="fileBaby">Add a File</label>
+            <input 
+                type="file"
+                name="file"
+                id="fileBaby" />
+        </div>
+        <div>
+            <label for="phoneBaby">Phone #</label>
+            <input 
+                type="tel"
+                name="phone"
+                id="phoneBaby" />
+        </div>
+        <div>
+            <label for="urlBaby">URL</label>
+            <input 
+                type="url"
+                name="url"
+                id="urlBaby" />
+        </div>
+        <!-- Color Selector -->
+        <div>
+            <label for="colorBaby">Color</label>
+            <input 
+                type="color"
+                name="color"
+                id="colorBaby" />
+        </div>
         <button type="reset">Reset</button>
         <button type="submit">Submit</button>
     </form>
