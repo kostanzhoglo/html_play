@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms Too</title>
+</head>
+<body>
+    <form action="resultspractice.html" method="GET" enctype="multipart/form-data">
+        <div>
+            <label for="playerNameBaby">Player Name: </label>
+            <input 
+                type="text" 
+                name="playerName"
+                id="playerNameBaby"
+                placeholder="John"
+                required
+            />
+        </div>
+        <div>
+            <label for="characterNameBaby">Character Name: </label>
+            <input 
+                type="text"
+                name="characterName"
+                id="characterName"
+                placeholder="Lelterth"
+                required
+            />
+        </div>
+        <div>
+            Race
+            <div>
+                <label for="humanBaby">Human</label>
+                <input 
+                    type="radio"
+                    name="race"
+                    id="humanBaby"
+                    value="human"
+                />
+            </div>
+            <div>
+                <label for="elfBaby">Elf</label>
+                <input 
+                    type="radio"
+                    name="race"
+                    id="elfBaby"
+                    value="elf"
+                />
+            </div>
+        </div>
+        <div>
+            <button type="submit"Submit>Submit</button>
+        </div>
+    </form>
+</body>
+</html>
